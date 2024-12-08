@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+<body>
+    
+        <nav class="px-56 py-4 border-b-2 border-gray-300 flex justify-between items-center">
+            <img src="data:image/png;base64,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"
+                width=100px; alt="">
+            <div class="flex items-center space-x-4">
+
+            <a href="#">Solutions</a>
+            <a href="#">Pricing</a>
+            <a href="#">Resources</a>
+            <a href="#">What's new</a>
+
+    </div>
+    <div class="flex items-center space-x-4">
+        <a href="">Log in</a>
+        <a href=""><button class="bg-black text-white font-bold px-6 py-3 rounded-full">
+                start free trial</button></a>
+</div>
+
+        </nav>
+
+    <section class="justify-center px-80 py-20 bg-cyan-300"><br>
+        
+        <p class="font-bold px-5 py-2 border-b-2 border-t-2 border-r-2 border-l-2 flex justify-evenly">Offer:earn 1% of all sales as subscription credits,upto $10,000.Learn more </p>
+        <p class="from-neutral-950 flex justify-center text-lg">Plans & pricing</p>
+        <h1 class=" font-semibold text-2xl flex justify-center">Start for free,then enjoy<br>Your first month for 20</h1>
+        <p class="text-base flex justify-center px-2 py-4">Choose the best plan for your business.Change plans as you grow</p>
+        <form>
+            <input 
+            type="email"
+            name="email"
+            placeholder="Enter your email address">
+            <button class="bg-black text-white font-bold px-5 py-2 rounded-full">
+                start free trial
+    
+            </button>
+            <section class="bg-white dark:bg-gray-900">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+                    <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Designed for business teams like yours</h2>
+                        <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+                    </div>
+                    <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+                        <!-- Pricing Card -->
+                        <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                            <h3 class="mb-4 text-2xl font-semibold">Starter</h3>
+                            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best option for personal use & for your next project.</p>
+                            <div class="flex justify-center items-baseline my-8">
+                                <span class="mr-2 text-5xl font-extrabold">$29</span>
+                                <span class="text-gray-500 dark:text-gray-400">/month</span>
+                            </div>
+                            <!-- List -->
+                            <ul role="list" class="mb-8 space-y-4 text-left">
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Individual configuration</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>No setup, or hidden fees</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Team size: <span class="font-semibold">1 developer</span></span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Premium support: <span class="font-semibold">6 months</span></span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Free updates: <span class="font-semibold">6 months</span></span>
+                                </li>
+                            </ul>
+                            <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
+                        </div>
+                        <!-- Pricing Card -->
+                        <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                            <h3 class="mb-4 text-2xl font-semibold">Company</h3>
+                            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Relevant for multiple users, extended & premium support.</p>
+                            <div class="flex justify-center items-baseline my-8">
+                                <span class="mr-2 text-5xl font-extrabold">$99</span>
+                                <span class="text-gray-500 dark:text-gray-400">/month</span>
+                            </div>
+                            <!-- List -->
+                            <ul role="list" class="mb-8 space-y-4 text-left">
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Individual configuration</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>No setup, or hidden fees</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Team size: <span class="font-semibold">10 developers</span></span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Premium support: <span class="font-semibold">24 months</span></span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Free updates: <span class="font-semibold">24 months</span></span>
+                                </li>
+                            </ul>
+                            <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
+                        </div>
+                        <!-- Pricing Card -->
+                        <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                            <h3 class="mb-4 text-2xl font-semibold">Enterprise</h3>
+                            <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Best for large scale uses and extended redistribution rights.</p>
+                            <div class="flex justify-center items-baseline my-8">
+                                <span class="mr-2 text-5xl font-extrabold">$499</span>
+                                <span class="text-gray-500 dark:text-gray-400">/month</span>
+                            </div>
+                            <!-- List -->
+                            <ul role="list" class="mb-8 space-y-4 text-left">
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Individual configuration</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>No setup, or hidden fees</span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Team size: <span class="font-semibold">100+ developers</span></span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Premium support: <span class="font-semibold">36 months</span></span>
+                                </li>
+                                <li class="flex items-center space-x-3">
+                                    <!-- Icon -->
+                                    <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <span>Free updates: <span class="font-semibold">36 months</span></span>
+                                </li>
+                            </ul>
+                            <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:text-white  dark:focus:ring-primary-900">Get started</a>
+                        </div>
+                    </div>
+                </div>
+              </section>
+            
+        </form>
+        
+        
+    </section>
+
+    </head>
+</body>
+
+</html>
